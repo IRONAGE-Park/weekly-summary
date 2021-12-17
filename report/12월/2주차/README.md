@@ -396,7 +396,6 @@ with ReaderThread(device, rawProtocal) as p:
 - `Func` 형식에서 `sendCepScript`의 경우 `fcode`에 `id` 값 매핑 후 실행
 - 매크로 매핑 시 커스텀 목록 리스트 가져오기
 - 매크로 여러 개 클릭하여 한 번에 복사 / 붙여넣기
-- 매크로에서 단축키 입력 시 정상적으로 되지 않는 버그 픽스
 - 기능 추가 시 `snackbar` 띄우기
 - 모든 데이터 구조 ID 형식 변경 `number` -> `string`
 - 키보드 모드
