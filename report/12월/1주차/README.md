@@ -18,9 +18,11 @@
 디자이너의 요청으로 베타 테스터 모집 공고 글 작성 및 진행 상황 보고를 위해 현재까지의 개발 진행 상황 일부를 캡처하여 `INVAIZ Studio 자료`에 업로드 하였음.
 
 - [리뉴얼 캡처 자료](https://flow.team/l/KLIA)
+
   ![리뉴얼 캡처 자료](assets/리뉴얼_캡처_자료.png)
 
 - [리뉴얼 Drag & Drop 영상 녹화 자료](https://flow.team/l/KwwH)
+
   ![리뉴얼 Drag & Drop 영상 녹화 자료](assets/리뉴얼_D&D_영상_녹화_자료.png)
 
 ---
