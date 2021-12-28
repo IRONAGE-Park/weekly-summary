@@ -7,7 +7,7 @@
 - [파일/폴더/웹사이트 입력 분할 ✅](#파일폴더웹사이트-입력-분할-)
 - [`Windows` 호환 조사 및 픽스 ✅](#windows-호환-조사-및-픽스-)
 - [`node-gyp` 조사 ✅](#node-gyp-조사-)
-- [`Mac`에서 `CameraRaw` 조사 ✅](#mac에서-camerarow-조사-)
+- [`Mac`에서 `CameraRaw` 조사 ✅](#mac에서-cameraraw-조사-)
 - [디테일 수정 ✅](#디테일-수정-)
 
 ---
