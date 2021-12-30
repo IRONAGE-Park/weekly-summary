@@ -32,6 +32,8 @@
 
 - [Apple Developer - NSApplication](https://developer.apple.com/documentation/appkit/nsapplication?language=objc)
 
+---
+
 ## `NSWorkspace`
 
 - 다른 애플리케이션을 실행하고 다양한 파일 처리 서비스를 수행할 수 있는 작업 공간.
@@ -105,6 +107,7 @@
   test = ^(NSWorkspaceAuthorization *auth, NSError *error) {
     NSLog(@"%@ %@", auth, error);
   };
+
   [[NSWorkspace sharedWorkspace] requestAuthorizationOfType:NSWorkspaceAuthorizationTypeReplaceFile completionHandler:test];
   ```
 
@@ -133,6 +136,8 @@
 #### 참고
 
 - [Apple Developer - NSWorkspace](https://developer.apple.com/documentation/appkit/nsworkspace?language=objc)
+
+---
 
 ## `NSRunningApplication`
 

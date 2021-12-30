@@ -1,11 +1,35 @@
-# `Type`
+# `Foundation`
 
-> `Objective-C`의 자료형(`type`)에 관한 조사.
+> `Objective-C`의 `Foundation` 라이브러리(기본 기능 계층)에 관한 조사.
 
 ## 목차
 
+- [`NSLog`](#nslog)
 - [`NSURL`](#nsurl)
 - [`NSArray`](#nsarray)
+- []
+
+---
+
+## `NSLog`
+
+- 메세지를 기록하는 함수.
+
+### 주요 기능
+
+- 오류 메세지를 기록.
+- 디버깅 용.
+
+### 사용 예제
+
+```objective-c
+NSLog(@"format1, format2", data1, data2);
+```
+
+#### 참고
+
+- [Apple Developer - NSLog](https://developer.apple.com/documentation/foundation/1395275-nslog/)
+- [Apple Developer - 지원되는 형식 지정자](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265)
 
 ---
 
@@ -32,6 +56,12 @@
   NSURL *url = [NSURL URLWithString:@"https://github.com"];
   ```
 
+#### 참고
+
+- [Apple Developer - NSURL](https://developer.apple.com/documentation/foundation/nsurl?language=objc)
+
+---
+
 ## `NSArray`
 
 - 정적으로 정렬된 객체의 컬렉션.
@@ -47,3 +77,7 @@
   ```objective-c
   NSArray *array = @[someObject, @"Hello World!", @42];
   ```
+
+#### 참고
+
+- [Apple Developer - NSArray](https://developer.apple.com/documentation/foundation/nsarray?language=objc)
