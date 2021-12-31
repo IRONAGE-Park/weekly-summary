@@ -36,6 +36,8 @@
 
 ## 파일/폴더/웹사이트 입력 분할 ✅
 
+##### 작업 상세 설명
+
 ![파일_폴더_웹사이트_열기](./assets/파일_폴더_웹사이트_열기.gif)
 
 - 기존의 파일/폴더 통합 선택 시 `Windows`에서는 파일이 선택되지 않는 상태가 나타났습니다.
@@ -63,7 +65,7 @@
 
 #### 고려 사항
 
-- 조사한 정보는 https://github.com/ghooz1204/weekly-summary/tree/master/research/javascript/ime-mode.md 에서 확인할 수 있습니다.
+- 조사한 정보는 [여기](https://github.com/ghooz1204/weekly-summary/tree/master/research/javascript/ime-mode.md)에서 확인할 수 있습니다.
 
 ---
 
@@ -88,7 +90,7 @@
 
 - `OS`의 네이티브 프로그래밍이 지원하지 않는 범위. 즉, 네이티브 프로그래밍 프레임워크(`WIN32 API`, `Cocoa Framework`)에서 지원하지 않는 기능의 경우에는 구현하기 어렵습니다.
 - 아직까지는 미지의 영역으로 봐도 무방한 수준이며, 탐구를 계속 진행해야할 것으로 예상됩니다.
-- 조사한 정보는 https://github.com/ghooz1204/weekly-summary/tree/master/research/node-gyp 에서 확인할 수 있습니다.
+- 조사한 정보는 [여기](https://github.com/ghooz1204/weekly-summary/tree/master/research/node-gyp) 에서 확인할 수 있습니다.
 
 ---
 
@@ -132,7 +134,7 @@
 - `Windows`에서 창의 핸들을 조작하여 하위 핸들에 접근하는 방법을 윈도우 프로그래밍 기법이라는 이름 외에 다른 이름을 발견하지 못 했습니다.
 - 이에 `Mac`에서도 해당 기능을 부르는 이름이 있다면 더욱 발견하기 쉬울 것 같습니다.
 - 혹시나 정보를 알게 된다면 말씀해주시면 감사하겠습니다.
-- 조사한 정보는 https://github.com/ghooz1204/weekly-summary/tree/master/research/objective-c 에서 확인할 수 있습니다.
+- 조사한 정보는 [여기](https://github.com/ghooz1204/weekly-summary/tree/master/research/objective-c) 에서 확인할 수 있습니다.
 
 ---
 
