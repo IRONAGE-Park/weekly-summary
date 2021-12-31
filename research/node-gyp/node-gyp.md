@@ -4,7 +4,7 @@
 
 ## 목차
 
-- [`node-gyp`란?](#nodegyp란)
+- [`node-gyp`란?](#node-gyp란)
 - [`addons`란?](#addons란)
 - [구성 방법](#구성-방법)
 - [빌드 방법](#빌드-방법)
@@ -13,7 +13,7 @@
 
 ## `node-gyp`란?
 
-- `Node.js`용 기본 애드온 모듈을 컴파일 하기 위해 `Node.js`로 작성된 크로스 플랫폼 커맨드 라인 도구.
+- `Node.js`용 기본 `addon` 모듈을 컴파일 하기 위해 `Node.js`로 작성된 크로스 플랫폼 커맨드 라인 도구.
 - `Node.js`의 버전에 관계 없이 사용 가능한 모듈을 빌드함.
 - 이 모듈을 사용하여 빌드하면 `Node.js`에서 네이티브 프로그래밍. `C`, `C++`을 컴파일하여 사용 가능 함.
 - 사용 환경
@@ -131,5 +131,5 @@
 #### 참고
 
 - [`node-gyp` 문서](https://github.com/nodejs/node-gyp/tree/2ef5fb86277c4d81baffc0b9f642a8d86be1bfa5/docs)
-- [`Node.js addons 문서`](https://nodejs.org/api/addons.html)
+- [`Node.js addons` 문서](https://nodejs.org/api/addons.html)
 - [`binding.gyp` 사용 예시](https://github.com/nodejs/node-gyp/blob/HEAD/docs/binding.gyp-files-in-the-wild.md)

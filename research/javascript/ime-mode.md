@@ -5,8 +5,8 @@
 ## 목차
 
 - [`IME란?`](#ime란)
-- [`IME-Mode란?`](#imemode란)
-- [`JavaScript`에서 `IME-Mode`](#javascript에서-imemde)
+- [`IME-Mode란?`](#ime-mode란)
+- [`JavaScript`에서 `IME-Mode`](#javascript에서-ime-mode)
 - [영문 입력으로 고정시키기 위한 방법?](#영문-입력으로-고정시키기-위한-방법)
 
 ---
