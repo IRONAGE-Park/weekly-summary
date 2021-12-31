@@ -7,7 +7,6 @@
 - [`NSLog`](#nslog)
 - [`NSURL`](#nsurl)
 - [`NSArray`](#nsarray)
-- []
 
 ---
 
