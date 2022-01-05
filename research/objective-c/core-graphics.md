@@ -30,6 +30,8 @@
 
   - 디스플레이의 고유 식별자.
 
+  - 문서: [Apple Developer - CGDirectDisplayID](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid?language=objc)
+
 - `CGMainDisplayID`
 
   > 함수
@@ -39,6 +41,8 @@
   ```objective-c
   CGDirectDisplayID mainId = CGMainDisplayID();
   ```
+
+  - 문서: [Apple Developer - CGMainDisplayID](https://developer.apple.com/documentation/coregraphics/1455620-cgmaindisplayid?language=objc)
 
 - `CGDisplayBounds`
 
@@ -54,12 +58,11 @@
   NSLog(@"%@", NSStringFromRect(rect));
   ```
 
+  - 문서: [Apple Developer - CGDisplayBounds](https://developer.apple.com/documentation/coregraphics/1456395-cgdisplaybounds?language=objc)
+
 #### 참고
 
 - [Apple Developer - Quartz Display Service](https://developer.apple.com/documentation/coregraphics/quartz_display_services?language=objc)
-- [Apple Developer - CGDirectDisplayID](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid?language=objc)
-- [Apple Developer - CGMainDisplayID](https://developer.apple.com/documentation/coregraphics/1455620-cgmaindisplayid?language=objc)
-- [Apple Developer - CGDisplayBounds](https://developer.apple.com/documentation/coregraphics/1456395-cgdisplaybounds?language=objc)
 
 ---
 
@@ -95,6 +98,8 @@
   CGEventPost(kCGHIDEventTap, event);
   ```
 
+  - 문서: [Apple Developer - CGEventCreateMouseEvent](https://developer.apple.com/documentation/coregraphics/1454356-cgeventcreatemouseevent?language=objc)
+
 - `CGEventCreateKeyboardEvent`
 
   > 함수
@@ -122,6 +127,8 @@
   CGEventPost(kCGHIDEventTap, shiftUpEvent);
   ```
 
+  - 문서: [Apple Developer - CGEventCreateKeyboardEvent](https://developer.apple.com/documentation/coregraphics/1456564-cgeventcreatekeyboardevent?language=objc)
+
 - `CGEventCreateScrollWheelEvent`
 
   > 함수
@@ -144,6 +151,8 @@
   CGEventPost(kCGHIDEventTap, scrollEvent);
   ```
 
+  - 문서: [Apple Developer - CGEventCreateScrollWheelEvent](https://developer.apple.com/documentation/coregraphics/1541327-cgeventcreatescrollwheelevent?language=objc)
+
 - `CGEventGetLocation`
 
   > 함수
@@ -157,6 +166,8 @@
   CGPoint point = CGEventGetLocation(event);
   NSLog(@"%@", NSStringFromPoint(point));
   ```
+
+  - 문서: [Apple Developer - CGEventGetLocation](https://developer.apple.com/documentation/coregraphics/1455788-cgeventgetlocation?language=objc)
 
 - `CGEventSetFlags`
 
@@ -174,6 +185,8 @@
   CGEventPost(kCGHIDEventTap, keyEvent);
   ```
 
+  - 문서: [Apple Developer - CGEventSetFlags](https://developer.apple.com/documentation/coregraphics/1455044-cgeventsetflags?language=objc)
+
 - `CGEventPost`
 
   > 함수
@@ -188,6 +201,8 @@
   CGEventSetFlags(keyEvent, kCGEventFlagMaskShift);
   CGEventPost(kCGHIDEventTap, keyEvent);
   ```
+
+  - 문서: [Apple Developer - CGEventPost](https://developer.apple.com/documentation/coregraphics/1456527-cgeventpost?language=objc)
 
 - `CGEventPostToPid`
 
@@ -205,16 +220,11 @@
   CGEventPostToPid(frontMostApp.processIdentifier, keyEvent);
   ```
 
+  - 문서: [Apple Developer - CGEventPostToPid](https://developer.apple.com/documentation/coregraphics/1454804-cgeventposttopid?language=objc)
+
 #### 참고
 
 - [Apple Developer - Quartz Event Service](https://developer.apple.com/documentation/coregraphics/quartz_event_services?language=objc)
-- [Apple Developer - CGEventCreateMouseEvent](https://developer.apple.com/documentation/coregraphics/1454356-cgeventcreatemouseevent?language=objc)
-- [Apple Developer - CGEventCreateKeyboardEvent](https://developer.apple.com/documentation/coregraphics/1456564-cgeventcreatekeyboardevent?language=objc)
-- [Apple Developer - CGEventCreateScrollWheelEvent](https://developer.apple.com/documentation/coregraphics/1541327-cgeventcreatescrollwheelevent?language=objc)
-- [Apple Developer - CGEventGetLocation](https://developer.apple.com/documentation/coregraphics/1455788-cgeventgetlocation?language=objc)
-- [Apple Developer - CGEventSetFlags](https://developer.apple.com/documentation/coregraphics/1455044-cgeventsetflags?language=objc)
-- [Apple Developer - CGEventPost](https://developer.apple.com/documentation/coregraphics/1456527-cgeventpost?language=objc)
-- [Apple Developer - CGEventPostToPid](https://developer.apple.com/documentation/coregraphics/1454804-cgeventposttopid?language=objc)
 
 ---
 
