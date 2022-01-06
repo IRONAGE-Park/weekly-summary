@@ -163,27 +163,27 @@
 ### 이번 주 추가 리스트
 
 - 파일/폴더/웹사이트 입력 분할
-- Clip Studio 프리셋 추가
-- XD Windows 호환
+- `Clip Studio` 프리셋 추가
+- `XD` `Windows` 호환
 
 ### 이번 주 구현 리스트
 
 - 파일/폴더/웹사이트 입력 분할
 - 릴리즈 노트 링크 구현
-- Clip Studio 프리셋 추가
-- XD Windows 호환
+- `Clip Studio` 프리셋 추가
+- `XD` `Windows` 호환
 
 ### 현재 구현이 필요한 기능 리스트(미구현 리스트)
 
 - 자동 업데이트 환경 구성
 - 목록 휴지통 기능 구현 - Design 설계 중.
 - 서브 오버레이?
-- Func 형식에 id 추가
-- Func 형식에서 sendCepScript의 경우 fcode에 id 값 매핑 후 실행
+- `Func` 형식에 `id` 추가
+- `Func` 형식에서 `sendCepScript`의 경우 `fcode`에 `id` 값 매핑 후 실행
 - 매크로 여러 개 클릭하여 한 번에 복사 / 붙여넣기
-- 모든 데이터 구조 ID 형식 변경 number -> string
+- 모든 데이터 구조 ID 형식 변경 `number` -> `string`
 - 키보드 모드
-- Mac에서 설치 시 CEP 프로그램 종료 시키기
-- Windows에서 프로그램 리스트 잘 안뜨는 버그
-- Windows 한글로 키 입력 시 종료되는 버그
+- `Mac`에서 설치 시 `CEP` 프로그램 종료 시키기
+- `Windows`에서 프로그램 리스트 잘 안뜨는 버그
+- `Windows` 한글로 키 입력 시 종료되는 버그
 - 오버레이 회전 기능 구현
