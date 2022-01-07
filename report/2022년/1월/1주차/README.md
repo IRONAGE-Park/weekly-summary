@@ -70,6 +70,12 @@
     - `Camera Raw`에서 접근 가능한 모든 `AXTextField`의 값을 가져온 후, `+1`하여 적용하는 소스 코드를 작성하여 실행한 결과입니다.
       ![Camera Raw 실험](./assets/Camera_Raw_실험.gif)
 
+- `macOS`의 `Accessibility Inspector`라는 도구를 사용하면 해당 애플리케이션 창에 있는 접근 가능한 요소를 확인할 수 있습니다.
+
+  ![Accessibility Inspector 사용법](./assets/Accessibility_Inspector_사용법.gif)
+
+  - 해당 도구를 활용하여 보여지지 않는 요소는 `AXTextField`가 접근할 수 없다는 것을 확인했습니다.
+
 > `Application Service`, `Core Graphics`, `Appkit` 라이브러리를 잘 활용하면 `Camera Raw`를 지원은 물론이고, 다양한 이벤트 관리와 같은 추가 기능 및 성능 향상이 가능할 것으로 사료됩니다.
 
 #### 고려 사항
