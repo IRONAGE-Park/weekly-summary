@@ -2,7 +2,7 @@
 
 ## 주간 작업 목록
 
-- [`Windows` 스크롤 버그 수정 ✅](#windows에서-스크롤-버그-수정-)
+- [`Windows` 스크롤 버그 수정 ✅](#windows-스크롤-버그-수정-)
 - [`node-gyp` 조사 ✅](#node-gyp-조사-)
 - [`macOS`에서 `Camera Raw` 조사 ✅](#macos에서-camera-raw-조사-)
 
@@ -10,7 +10,7 @@
 
 ---
 
-## `Windows` 스크롤 버그 수정
+## `Windows` 스크롤 버그 수정 ✅
 
 #### 작업 상세 설명
 
@@ -22,7 +22,7 @@
 
 ---
 
-## `node-gyp` 조사
+## `node-gyp` 조사 ✅
 
 #### 작업 상세 설명
 
@@ -50,7 +50,7 @@
 
 ---
 
-## `macOS`에서 `Camera Raw` 조사
+## `macOS`에서 `Camera Raw` 조사 ✅
 
 #### 작업 상세 설명
 
