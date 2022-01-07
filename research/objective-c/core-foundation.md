@@ -6,7 +6,7 @@
 - `Application Service`, 애플리케이션 환경 등 기본적인 소프트웨어 서비스를 제공하는 프레임워크.
 - 공통 데이터 유형 추상화, 유니코드 문자열 지원, 다양한 유틸리티 기능 제공.
 
-- 참고: [Apple Developer - Core Foundation 디자인 개념](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/CFDesignConcepts.html#//apple_ref/doc/uid/10000122i)
+- 참고: [Apple Developer - `Core Foundation` 디자인 개념](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/CFDesignConcepts.html#//apple_ref/doc/uid/10000122i)
 
 ## 목차
 
@@ -57,9 +57,9 @@
 
 #### 참고
 
-- [Apple Developer - CFType](https://developer.apple.com/documentation/corefoundation/cftype?language=objc)
-- [Apple Developer - CFRelease](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease?language=objc)
-- [Apple Developer - CFRetain](https://developer.apple.com/documentation/corefoundation/1521269-cfretain?language=objc)
+- [Apple Developer - `CFType`](https://developer.apple.com/documentation/corefoundation/cftype?language=objc)
+- [Apple Developer - `CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease?language=objc)
+- [Apple Developer - `CFRetain`](https://developer.apple.com/documentation/corefoundation/1521269-cfretain?language=objc)
 
 ---
 
@@ -139,11 +139,11 @@
 
 #### 참고
 
-- [Apple Developer - CFString](https://developer.apple.com/documentation/corefoundation/cfstring?language=objc)
-- [Apple Developer - CFSTR](https://developer.apple.com/documentation/corefoundation/cfstr?language=objc)
-- [Apple Developer - stringWithFormat](https://developer.apple.com/documentation/foundation/nsstring/1497275-stringwithformat?language=objc)
-- [Apple Developer - CFStringGetIntValue](https://developer.apple.com/documentation/corefoundation/1541939-cfstringgetintvalue?language=objc)
-- [Apple Developer - CFStringGetDoubleValue](https://developer.apple.com/documentation/corefoundation/1543293-cfstringgetdoublevalue?language=objc)
+- [Apple Developer - `CFString`](https://developer.apple.com/documentation/corefoundation/cfstring?language=objc)
+- [Apple Developer - `CFSTR`](https://developer.apple.com/documentation/corefoundation/cfstr?language=objc)
+- [Apple Developer - `stringWithFormat`](https://developer.apple.com/documentation/foundation/nsstring/1497275-stringwithformat?language=objc)
+- [Apple Developer - `CFStringGetIntValue`](https://developer.apple.com/documentation/corefoundation/1541939-cfstringgetintvalue?language=objc)
+- [Apple Developer - `CFStringGetDoubleValue`](https://developer.apple.com/documentation/corefoundation/1543293-cfstringgetdoublevalue?language=objc)
 
 ---
 
@@ -215,12 +215,12 @@
 
 #### 참고
 
-- [Apple Developer - CFArray](https://developer.apple.com/documentation/corefoundation/cfarray?language=objc)
-- [Apple Developer - CFArrayCreate](https://developer.apple.com/documentation/corefoundation/1388741-cfarraycreate?language=objc)
-- [Apple Developer - CFArrayTypeCallBacks](https://developer.apple.com/documentation/corefoundation/kcftypearraycallbacks?language=objc)
-- [Apple Developer - kCFTypeArrayCallBacks](https://developer.apple.com/documentation/corefoundation/cfarraycallbacks?language=objc)
-- [Apple Developer - CFArrayGetCount](https://developer.apple.com/documentation/corefoundation/1388772-cfarraygetcount?language=objc)
-- [Apple Developer - CFArrayGetValueAtIndex](https://developer.apple.com/documentation/corefoundation/1388767-cfarraygetvalueatindex?language=objc)
+- [Apple Developer - `CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray?language=objc)
+- [Apple Developer - `CFArrayCreate`](https://developer.apple.com/documentation/corefoundation/1388741-cfarraycreate?language=objc)
+- [Apple Developer - `CFArrayTypeCallBacks`](https://developer.apple.com/documentation/corefoundation/kcftypearraycallbacks?language=objc)
+- [Apple Developer - `kCFTypeArrayCallBacks`](https://developer.apple.com/documentation/corefoundation/cfarraycallbacks?language=objc)
+- [Apple Developer - `CFArrayGetCount`](https://developer.apple.com/documentation/corefoundation/1388772-cfarraygetcount?language=objc)
+- [Apple Developer - `CFArrayGetValueAtIndex`](https://developer.apple.com/documentation/corefoundation/1388767-cfarraygetvalueatindex?language=objc)
 
 ---
 
@@ -232,13 +232,13 @@
 
 #### 참고
 
-- [Apple Developer - CFDictionary](https://developer.apple.com/documentation/corefoundation/cfdictionary?language=objc)
+- [Apple Developer - `CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary?language=objc)
 
 ---
 
 ## `Foundation`과 연결
 
-- [Apple Developer - CF : NS Bridges](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2)
-- [Naver Blog - \_\_bridge 형변환](https://m.blog.naver.com/ciscovoip/222049735477)
+- [Apple Developer - `CF : NS Bridges`](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2)
+- [Naver Blog - `\_\_bridge` 형변환](https://m.blog.naver.com/ciscovoip/222049735477)
 
 ---

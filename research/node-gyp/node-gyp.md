@@ -119,6 +119,8 @@
 - [`.gyp` 파일 사용 문서](https://gyp.gsrc.io/docs/UserDocumentation.md)
 - [`.gyp` 파일 `input` 문서](https://gyp.gsrc.io/docs/InputFormatReference.md)
 
+---
+
 ## 빌드 방법
 
 - `npm`을 통해 `node-gyp`을 접근할 수 있도록 루트 폴더에서 `npm install node-gyp` 또는 `yarn add node-gyp`.
@@ -127,6 +129,8 @@
   > 현재 플랫폼에 대한 프로젝트 빌드 파일을 생성.
 - 그 후 `node-gyp build` 명령을 실행함.(전역 설치가 아닌 경우 `script`를 통해 실행)
   > 모듈을 빌드.
+
+---
 
 #### 참고
 

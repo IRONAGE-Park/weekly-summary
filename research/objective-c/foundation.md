@@ -98,12 +98,12 @@
 
 #### 참고
 
-- [Apple Developer - NSString](https://developer.apple.com/documentation/foundation/nsstring?language=objc)
-- [Apple Developer - stringWithFormat](https://developer.apple.com/documentation/foundation/nsstring/1497275-stringwithformat?language=objc)
-- [Apple Developer - stringWithUTF8String](https://developer.apple.com/documentation/foundation/nsstring/1497379-stringwithutf8string?language=objc)
-- [Apple Developer - length](https://developer.apple.com/documentation/foundation/nsstring/1414212-length?language=objc)
-- [Apple Developer - UTF8String](https://developer.apple.com/documentation/foundation/nsstring/1411189-utf8string?language=objc)
-- [Apple Developer - containsString](https://developer.apple.com/documentation/foundation/nsstring/1414563-containsstring?language=objc)
+- [Apple Developer - `NSString`](https://developer.apple.com/documentation/foundation/nsstring?language=objc)
+- [Apple Developer - `stringWithFormat`](https://developer.apple.com/documentation/foundation/nsstring/1497275-stringwithformat?language=objc)
+- [Apple Developer - `stringWithUTF8String`](https://developer.apple.com/documentation/foundation/nsstring/1497379-stringwithutf8string?language=objc)
+- [Apple Developer - `length`](https://developer.apple.com/documentation/foundation/nsstring/1414212-length?language=objc)
+- [Apple Developer - `UTF8String`](https://developer.apple.com/documentation/foundation/nsstring/1411189-utf8string?language=objc)
+- [Apple Developer - `containsString`](https://developer.apple.com/documentation/foundation/nsstring/1414563-containsstring?language=objc)
 
 ---
 
@@ -124,9 +124,31 @@
   NSArray *array = @[someObject, @"Hello World!", @42];
   ```
 
+- `indexOfObjectPassingTest:`
+
+  > 인스턴스 메서드
+
+  - 배열에서 주어진 콜백 함수의 반환 값이 `true`인 첫 번째 요소의 인덱스 값 `NSUInteger` 반환.
+  - 테스트를 통과한 요소가 없으면 `NSNotFound` 반환.
+  - 매개변수
+    - `predicate`: 콜백 함수.(검사식이 들어갈 블록)
+      - 콜백 매개변수 `obj`: 배열의 요소.
+      - 콜백 매개변수 `idx`: 배열 요소의 인덱스.
+      - 콜백 매개변수 `*stop`: `true` 설정하면 다음 요소에 대한 실행을 취소.
+      - 반환 값: 검사식 통과 여부 `BOOL`.
+
+  ```objective-c
+  NSArray *runningApps = [[NSWorkspace sharedWorkspace] runningApplications];
+
+  NSUInteger photoshop_index = [runningApps indexOfObjectPassingTest:^BOOL(NSRunningApplication *app, NSUInteger idx, BOOL * _Nonnull stop) {
+    return [[[app bundleURL] path] containsString:@"Photoshop"];
+  }];
+  ```
+
 #### 참고
 
-- [Apple Developer - NSArray](https://developer.apple.com/documentation/foundation/nsarray?language=objc)
+- [Apple Developer - `NSArray`](https://developer.apple.com/documentation/foundation/nsarray?language=objc)
+- [Apple Developer - `indexOfObjectPassingTest`](https://developer.apple.com/documentation/foundation/nsarray/1408043-indexofobjectpassingtest?language=objc)
 
 ---
 
@@ -155,7 +177,7 @@
 
 #### 참고
 
-- [Apple Developer - NSURL](https://developer.apple.com/documentation/foundation/nsurl?language=objc)
+- [Apple Developer - `NSURL`](https://developer.apple.com/documentation/foundation/nsurl?language=objc)
 
 ---
 
@@ -176,14 +198,14 @@ NSLog(@"format1, format2", data1, data2);
 
 #### 참고
 
-- [Apple Developer - NSLog](https://developer.apple.com/documentation/foundation/1395275-nslog/)
+- [Apple Developer - `NSLog`](https://developer.apple.com/documentation/foundation/1395275-nslog/)
 - [Apple Developer - 지원되는 형식 지정자](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265)
 
 ---
 
 ## `Core Foundation`과 연결
 
-- [Apple Developer - CF : NS Bridges](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2)
-- [Naver Blog - \_\_bridge 형변환](https://m.blog.naver.com/ciscovoip/222049735477)
+- [Apple Developer - `CF : NS Bridges`](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2)
+- [Naver Blog - `\_\_bridge` 형변환](https://m.blog.naver.com/ciscovoip/222049735477)
 
 ---

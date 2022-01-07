@@ -30,7 +30,7 @@
 
 #### 참고
 
-- [Apple Developer - NSApplication](https://developer.apple.com/documentation/appkit/nsapplication?language=objc)
+- [Apple Developer - `NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication?language=objc)
 
 ---
 
@@ -135,7 +135,7 @@
 
 #### 참고
 
-- [Apple Developer - NSWorkspace](https://developer.apple.com/documentation/appkit/nsworkspace?language=objc)
+- [Apple Developer - `NSWorkspace`](https://developer.apple.com/documentation/appkit/nsworkspace?language=objc)
 
 ---
 
@@ -154,4 +154,4 @@
 
 #### 참고
 
-- [Apple Developer - NSRunningApplication](https://developer.apple.com/documentation/appkit/nsrunningapplication?language=objc)
+- [Apple Developer - `NSRunningApplication`](https://developer.apple.com/documentation/appkit/nsrunningapplication?language=objc)
