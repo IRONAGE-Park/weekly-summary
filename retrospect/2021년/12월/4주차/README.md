@@ -1,4 +1,4 @@
-# (인사이트) `Windows OS`와 `Mac OS`
+# (기술) `Windows OS`와 `Mac OS`
 
 자사 소프트웨어인 `INVAIZ Studio`는 `Windows OS`와 `Mac OS`를 동시에 지원해야 한다.  
 이로 인해 두 가지 모두를 개발해야하는데, 모두 개발하기에는 리소스 낭비가 너무 심하다.  
