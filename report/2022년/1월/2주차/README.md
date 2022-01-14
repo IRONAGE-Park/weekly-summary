@@ -2,7 +2,7 @@
 
 ## 주간 작업 목록
 
-- [`L` 사의 `Camera Raw` 분석](l-사의-camera-raw-분석-)
+- [`L`사의 `Camera Raw` 분석](l사의-camera-raw-분석-)
 - [`node-gyp`로 `macOS` `Camera Raw` 개발](node-gyp로-macos-camera-raw-개발-)
 - [릴리즈 노트 양식 변경 ✅](#릴리즈-노트-양식-변경-)
 - [디테일 수정 ✅](#디테일-수정-)
@@ -11,7 +11,7 @@
 
 ---
 
-## `L` 사의 `Camera Raw` 분석
+## `L`사의 `Camera Raw` 분석
 
 #### 작업 상세 설명
 
