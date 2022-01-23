@@ -46,7 +46,7 @@
 
 ---
 
-## `macOS` `Camera Raw` 개발
+## `macOS` `Camera Raw` 개발 ✅
 
 #### 작업 상세 설명
 
@@ -116,6 +116,35 @@
 - `INVAIZ`에서 사용하는 용어들을 외부에 표현하고자 할 때, 정리되어 있지 않고 한 단어를 다르게 사용하면 혼란을 야기할 수 있습니다.
 - 이에 자주 사용하거나, `INVAIZ`와 관련된 용어를 통일하여 정리하였습니다.
 
+- 회사명
+
+  - 자사명 => 인바이즈, (주) 인바이즈, `INVAIZ`
+  - 타사명 => 기본적으로 영어 전체 이름을 기입합니다.
+    - Ex) `Adobe`, `Microsoft`, `Loupedeck` 등
+
+- 하드웨어
+
+  - grid, GRID, 그리드, 그리드텐 등 => `Grid10`.
+
+    - 대소문자를 포함하여 통일합니다.
+    - 앞에 `INVAIZ`를 붙여도 무방합니다.
+    - 뒤에 `CT`를 붙여 `Grid10-CT`를 붙여도 무방합니다.
+    - 편집 컨트롤러 등의 단어는 부가적인 설명을 위한 요소로 사용해야 합니다.
+    - Ex) `Grid10`, `Grid10-CT`, `INVAIZ Grid10` 등
+
+  - pro 모델, 비싼 버전, 고급형 등 => `Grid Pro`.
+
+    - 대소문자를 포함하여 통일합니다.
+    - 앞에 `INVAIZ`를 붙여도 무방합니다.
+    - Ex) `Grid Pro`, `INVAIZ Grid Pro` 등
+
+  - 다이얼, 노브 등 => 크리에이티브 다이얼(`Creative-Dial`).
+  - 키, 버튼, 단축키 버튼 등 => 익스프레스 키(`Express-Key`).
+  - 그룹 버튼 => 그룹 버튼(`Group button`)
+  - 디텐트, 걸림쇠 등 => 디텐트 혹은 포인트 타입(반대는 소프트 타입)
+  - 씨타입, CType, ctype, usb => `USB-CType`
+    - 대소문자를 포함하여 통일합니다.
+
 - 운영체제
 
   - 윈도우, 윈도, Window, Windows 등 => `Windows`.
@@ -137,24 +166,43 @@
   - 리눅스, 유닉스, 우분투, linux 등 => `Linux`.
 
     - `UNIX`(유닉스)는 `Linux`의 상위 호환 운영체제로, `macOS`와 `Linux`의 공통 조상입니다.
-    - 또한 리눅스에는 `Ubuntu`와 같은 모델이 있지만, 다양하므로 일반적으로 칭할 땐 `Linux`를 대소문자 확인하여 통일합니다.
+    - 또한 리눅스는 오픈 소스이므로 `Ubuntu`, `Debian`와 같은 배포판이 있지만, 다양하므로 일반적으로 칭할 땐 `Linux`를 대소문자 확인하여 통일합니다.
+    - Ex) `Linux`, `Ubuntu 18.04` 등
 
   - 안드로이드, `Android` => 둘다 사용.
-    버전을 붙여야 하는 경우, 버전 언어 표현(`Bigsur`와 같은), 숫자 표현을 각각 띄어쓰기로 구분하여 기입합니다.
+
+    - 버전을 붙여야 하는 경우, 버전 언어 표현(`Snow Cone`과 같은), 숫자 표현을 각각 띄어쓰기로 구분하여 기입합니다.
+    - Ex) `Android Snow Cone 12`, `안드로이드 Snow Cone`, `안드로이드 Red Velvet Cake 11` 등
 
   - ios, IOS => `iOS`.
 
     - 정식 명칭을 사용합니다.
     - 버전을 붙여야하는 경우 한 칸 띄우고 뒤에 기입합니다.
     - `iPadOS`와는 다르므로 구분하여 사용합니다.
+    - Ex) `iOS 14`, `iOS 15` 등
 
   - ipados, ipadOS => `iPadOS`.
 
     - 정식 명칭을 사용합니다.
     - 버전을 붙여야하는 경우 한 칸 띄우고 뒤에 기입합니다.
     - `iOS`와는 다르므로 구분하여 사용합니다.
+    - Ex) `iPadOS 14`, `iPadOS 15` 등
+
+- 소프트웨어
+
+  - 저희 소프트웨어, 인바이즈 스튜디오, invaiz studio, InvaizStudio => `INVAIZ Studio`.
+
+    - 대소문자와 띄어쓰기 확인하여 통일합니다.
+    - 버전을 붙여야 하는 경우, 버전 언어 표현(`Bigsur`와 같은), 숫자 표현을 각각 띄어쓰기로 구분하여 기입합니다.
+    - 버전 언어 표현은 강조하는 대문자를 제외한 다른 언어는 소문자로 표현합니다.
+    - Ex) `INVAIZ Studio 2.0.1`, `INVAIZ Studio 1.7.1`, `INVAIZ Studio Basquiat`, `INVAIZ Studio Andywarhol 1.7.1` 등
+
+  - 타사 소프트웨어 => 기본적으로 소프트웨어 제공사 명과 영어 전체 이름, 그리고 버전을 함께 기입합니다.
+    - Ex) `Adobe Photoshop CC 2022`, `Microsoft Excel 2013`, `Clip Studio Paint`, `Loupedeck Config` 등
 
 #### 고려 사항
+
+- 어디까지 통일해야 하는 지에 대한 범위와, 언어를 사용하는 환경(통화, 메일 등)에 따른 소소한 차이를 어떻게 고려할 지 판단해야 합니다.
 
 ---
 
