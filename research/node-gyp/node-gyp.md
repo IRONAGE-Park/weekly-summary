@@ -23,7 +23,7 @@
     - [`Visual Studio Build Tools`](https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=BuildTools) 또는 [`Visual Studio Community`](https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=Community) 설치.
     - [`Microsoft Store`](https://docs.python.org/3/using/windows.html#the-microsoft-store-package) 패키지에서 최신 버전의 `Python` 설치.
 
-  - `Mac`
+  - `macOS`
 
     - `Python` 설치.
     - `XCode`를 설치.
