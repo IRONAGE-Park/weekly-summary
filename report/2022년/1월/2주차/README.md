@@ -211,8 +211,8 @@
 
 #### 참고
 
-- [릴리즈 노트 상세 보기](https://github.com/INVAIZ/invaiz-studio-renewal-release/tree/main/release)
-- [설치 파일 다운로드 및 릴리즈 노트 간략하게 보기](https://github.com/INVAIZ/invaiz-studio-renewal-release/releases)
+- [릴리즈 노트 상세 보기](https://github.com/INVAIZ/invaiz-studio-v2-release/tree/main/release)
+- [설치 파일 다운로드 및 릴리즈 노트 간략하게 보기](https://github.com/INVAIZ/invaiz-studio-v2-release/releases)
 
 ---
 
