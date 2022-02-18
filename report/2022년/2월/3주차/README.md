@@ -5,7 +5,7 @@
 - [관리자 페이지 `TypeScript` 전환 ✅](#관리자-페이지-typescript-전환-)
 - [데이터 수집 미리보기 ✅](#데이터-수집-미리보기-)
 - [개인 데이터 수집 추가 ✅](#개인-데이터-수집-추가-)
-- [`INVAIZ Studio v2`에 `Channel.IO` 연동 ❌](#invaiz-studio-v2에-channelio-연동-)
+- [`INVAIZ Studio v2`에 `Channel.io` 연동 ✅](#invaiz-studio-v2에-channelio-연동-)
 - [`Apple` 개발자 등록 신청 ❌](#apple-개발자-등록-신청-)
 
 ---
@@ -19,7 +19,7 @@
 - 소스를 모두 뒤엎고 다시 작성하는 작업으로, 많은 시간이 소요됩니다.
 - 기존의 `invaiz-admin` 리포지토리는 남겨둔 채로, `INVAIZ Studio` 리뉴얼과 같이 `invaiz-admin-v2` 리포지토리를 개설하였습니다.
 - `invaiz-admin-v2` 리포지토리에서 `invaiz-admin`의 기능 대부분을 지운 후 로그인, 수집 데이터 분석 부분만 이식하여 `TypeScript`로 전환하였습니다.
-- `TypeScript`로 전환 함과 동시에 스타일 구성에 있어서 호환성이 떨어지는 `node-sass`, `.module.scss` 모듈을 사용하지 않고 `CSS-in-JS` 방식인 `@emotion` 라이브러리로 전환하였습니다.
+- `TypeScript`로 전환 함과 동시에 스타일 구성에 있어서 호환성이 떨어지는 `node-sass`, `.module.scss` 모듈을 사용하지 않고 `CSS-in-JS` 방식인 `@emotion`으로 전환하였습니다.
 
 #### 고려 사항
 
@@ -56,15 +56,43 @@
 
 ---
 
-## `INVAIZ Studio v2`에 `Channel.IO` 연동 ❌
+## `INVAIZ Studio v2`에 `Channel.io` 연동 ✅
 
 #### 작업 상세 설명
 
-- [`Channel.IO` 개발자 문서](https://developers.channel.io/docs)에 작성된 메뉴얼 대로, `INVAIZ Studio v2`에 소스 코드를 삽입하였으나, 예상대로 `CORS` 문제가 발생했습니다.
+- [`Channel.io` 개발자 문서](https://developers.channel.io/docs)에 작성된 메뉴얼대로, `INVAIZ Studio v2`에 소스 코드를 삽입하였으나, 예상대로 `CORS` 문제가 발생했습니다.
 
   ![Channel_CORS](./assets/Channel_CORS.png)
 
+- 해당 문제는 `HTTP` 통신의 안정성을 부여하기 위해 정해진 규약을 어겨 발생하는 문제로, 이를 `HTML`의 `meta` 태그를 사용하여 콘텐츠 보안 정책(`Content Security Policy`, `CSP`)를 수정하여 해결하는 방법을 사용하였습니다.
+- 적용 후, 정상적으로 `Channel.IO` 채팅 버튼이 렌더링 되는 것을 확인했습니다.
+
+  - 라이트 모드
+
+  ![Channel_IO_연동_라이트_모드](./assets/Channel_IO_연동_라이트_모드.png)
+
+  - 다크 모드
+
+  ![Channel_IO_연동_다크_모드](./assets/Channel_IO_연동_다크_모드.png)
+
+  - 아이콘
+
+  ![Channel_IO_연동_아이콘](./assets/Channel_IO_연동_아이콘.png)
+
+- 렌더된 채팅 자체에 타 웹페이지를 여는 링크가 적용되어 있고, 그 링크를 누르면 새 창을 열게 되어 있는데, 이때 열리는 창의 상단 영역(최대화, 최솨화, 닫기 등의 버튼이 있는 영역)이 포함되지 않는 상태입니다.
+
+  ![Channel_홈페이지_창_문제](./assets/Channel_홈페이지_창_문제.png)
+  ![네이버_창_문제](./assets/네이버_창_문제.png)
+
+  - 따라서 창을 끄거나 크기를 조절하는 데 불편함이 있을 것으로 예상되어 해결해야 합니다.
+
+- 또한 `CSP` 문제가 완전하게 해결되지 않았는지 또 다른 오류가 발생하는 모습입니다.
+
+  ![통신_에러_코드](./assets/통신_에러_코드.png)
+
 #### 고려 사항
+
+- `CSP` 문제는 보안과 직결되는 요소이므로 최대한 안정성을 갖추면서 `Channel.io` 시스템을 적용할 수 있는 방안을 마련해야 합니다.
 
 ---
 
