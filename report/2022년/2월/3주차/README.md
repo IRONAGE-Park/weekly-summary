@@ -65,7 +65,7 @@
   ![Channel_CORS](./assets/Channel_CORS.png)
 
 - 해당 문제는 `HTTP` 통신의 안정성을 부여하기 위해 정해진 규약을 어겨 발생하는 문제로, 이를 `HTML`의 `meta` 태그를 사용하여 콘텐츠 보안 정책(`Content Security Policy`, `CSP`)를 수정하여 해결하는 방법을 사용하였습니다.
-- 적용 후, 정상적으로 `Channel.IO` 채팅 버튼이 렌더링 되는 것을 확인했습니다.
+- 적용 후, 정상적으로 `Channel.io` 채팅 버튼이 렌더링 되는 것을 확인했습니다.
 
   - 라이트 모드
 
