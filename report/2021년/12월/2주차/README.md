@@ -6,9 +6,9 @@
 - [`Grid Pro HID` 연결 테스트 ✅](#grid-pro-hid-연결-테스트-)
 - [오버레이 디자인 변경 ✅](#오버레이-디자인-변경-)
 - [기능 추가/삭제/수정/제거 Context 기능 구현 ✅](#기능-추가삭제수정제거-context-기능-구현-)
-- [`INVAIZ Studio` 리뉴얼 베타버전 런칭 ✅](#invaiz-studio-리뉴얼-베타버전-런칭-)
+- [`INVAIZ Studio` 리뉴얼 베타 버전 런칭 ✅](#invaiz-studio-리뉴얼-베타-버전-런칭-)
 - [빠른 단축키 입력 구현 ❌](#빠른-단축키-입력-구현-)
-- [펑션베이 Python example code 작성 ✅](#펑션베이-python-example-code-작성-)
+- [`(주)펑션베이` `Python` example code 작성 ✅](#주펑션베이-python-example-code-작성-)
 - [고객과의 미팅 ✅](#고객과의-미팅-)
 
 ---
@@ -98,7 +98,7 @@
 
 ---
 
-## `INVAIZ Studio` 리뉴얼 베타버전 런칭 ✅
+## `INVAIZ Studio` 리뉴얼 베타 버전 런칭 ✅
 
 #### 작업 상세 설명
 
@@ -120,11 +120,11 @@
 
 ---
 
-## 펑션베이 Python example code 작성 ✅
+## `(주)펑션베이` `Python` example code 작성 ✅
 
 #### 작업 상세 설명
 
-2021.12.06(월)에 (주)펑션베이의 수석 연구원에게서 `Grid10` 제품을 구입하여 사용하고 있는데, 자사의 소프트웨어인 [`RecurDyn`](https://functionbay.com/ko)과 연동하여 INPUT 장비로 사용하기 위한 자문을 구함.
+2021.12.06(월)에 `(주)펑션베이`의 수석 연구원에게서 `Grid10` 제품을 구입하여 사용하고 있는데, 자사의 소프트웨어인 [`RecurDyn`](https://functionbay.com/ko)과 연동하여 INPUT 장비로 사용하기 위한 자문을 구함.
 
 이는 `Grid10`을 통해 자사의 소프트웨어를 직접 접근하는 기능을 구현하려는 것으로 판단.  
 즉, 우리 제품과의 100% 연동(제휴) 하는 소프트웨어가 생기게 됨.
@@ -404,5 +404,5 @@ with ReaderThread(device, rawProtocal) as p:
 - 매크로 매핑 시 커스텀 목록 리스트 가져오기
 - 매크로 여러 개 클릭하여 한 번에 복사 / 붙여넣기
 - 기능 추가 시 `snackbar` 띄우기
-- 모든 데이터 구조 ID 형식 변경 `number` -> `string`
+- 모든 데이터 구조 `id` 형식 변경 `number` -> `string`
 - 키보드 모드

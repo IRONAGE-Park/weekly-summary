@@ -140,7 +140,7 @@
   - 창을 열거나 닫음을 설정하는 체크박스가 사라집니다.
   - "생성"이라는 버튼의 글자가 "수정"으로 변경되었습니다.
 
-- 라이트룸 `HSL 패널` 기능 추가
+- `Adobe Lightroom Classic` `HSL 패널` 기능 추가
 
   ![HSL_패널](./assets/HSL_패널.png)
 
@@ -250,7 +250,7 @@
 - `Func` 형식에 `id` 추가
 - `Func` 형식에서 `sendCepScript`의 경우 `fcode`에 `id` 값 매핑 후 실행
 - 매크로 여러 개 클릭하여 한 번에 복사 / 붙여넣기
-- 모든 데이터 구조 ID 형식 변경 `number` -> `string`
+- 모든 데이터 구조 `id` 형식 변경 `number` -> `string`
 - 키보드 모드
 - `macOS`에서 설치 시 `CEP` 프로그램 종료 시키기
 - `Windows`에서 프로그램 리스트 잘 안뜨는 버그
