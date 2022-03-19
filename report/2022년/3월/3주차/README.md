@@ -6,7 +6,7 @@
 
 - [`Apple` 개발자 등록 및 코드사인 ✅](#apple-개발자-등록-및-코드사인-)
 - [`INVAIZ Studio` 패키징 수정 ✅](#invaiz-studio-패키징-수정-)
-- [패키지 파일 최적화 ❌](#패키지-파일-최적화-)
+- [패키지 파일 최적화 ✅](#패키지-파일-최적화-)
 - [`macOS`에서 `Camera Raw` 최적화 ❌](#macos에서-camera-raw-최적화-)
 - [`Final Cut Pro` 플러그인 조사 ❌](#final-cut-pro-플러그인-조사-)
 
