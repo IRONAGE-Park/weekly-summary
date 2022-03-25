@@ -75,7 +75,19 @@
 
 #### 작업 상세 설명
 
+- `macOS`에 임시로 구현되어 있던 `Camera Raw`에서, 값의 조작 범위가 모두 `1`로 설정되어 있던 것을 수정하였습니다.
+- 각 파라미터에 따라 적절한 값의 범위로 조작할 수 있습니다.
+
+  ![macOS_Camera_Raw_디테일](./assets/macOS_Camera_Raw_디테일.gif)
+
+- 또한, `raw` 파일의 경우 몇 가지 파라미터의 범위가 다른데, 그 중 온도 값의 범위를 다르게 사용할 수 있도록 하였습니다.
+
+  ![macOS_Camera_Raw_raw_파일](./assets/macOS_Camera_Raw_raw_파일.gif)
+
 #### 고려 사항
+
+- 아직까지 `ACR`, `Bridge` 등의 환경에서 지원하는 형태를 추가하지 않았습니다.
+- 또한, `Camera Raw`의 모든 기능을 지원할 수 없어 추려내야 합니다.
 
 ---
 
@@ -87,12 +99,16 @@
 - `Macbook` 터치 바 지원
 - 손 쉬운 사용 설정 유도
 - `Final Cut Pro` 지원
+- `Tooltip` 스타일 적용
+- 프로그램 추가 후 제거 시 다시 추가할 수 없는 버그
+- `macOS`에서 `Camera Raw` `Bridge`, `ACR` 실행 환경 구분
 
 ### 이번 주 구현 리스트
 
 - `@emotion` 모듈 스타일 오류 수정
 - `Macbook` 터치 바 지원
 - 손 쉬운 사용 설정 유도
+- `macOS`에서 `Camera Raw` 최적화
 
 ### 현재 구현이 필요한 기능
 
@@ -106,6 +122,8 @@
 - `Windows` 한글로 키 입력 시 종료되는 버그
 - 오버레이 회전 기능 구현
 - 커스텀 기능 목록에서 `Drag & Drop` 기능 구현
-- `macOS`에서 `Camera Raw` 최적화
 - 그룹 버튼으로 프리셋 변경 모드 설정 기능 추가
 - `Final Cut Pro` 지원
+- `Tooltip` 스타일 적용
+- 프로그램 추가 후 제거 시 다시 추가할 수 없는 버그
+- `macOS`에서 `Camera Raw` `Bridge`, `ACR` 실행 환경 구분
