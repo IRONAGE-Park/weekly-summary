@@ -78,7 +78,27 @@
 
 #### 작업 상세 설명
 
+- `macOS`에서 `Adobe Camera Raw`의 전체 호환 작업을 마무리하였습니다.
+- `Adobe Photoshop`에서 실행하는 `Camera Raw` 필터 뿐만 아니라 `Adobe Bridge`에서 실행하는 `Camera Raw` 필터도 사용 가능합니다.
+
+  ![Bridge_지원](./assets/Bridge_지원.gif)
+
+- 만약 `Adobe Photoshop`의 `Camera Raw`와 `Adobe Bridge`의 `Camera Raw`가 동시에 켜져 있을 때는 다음과 같이 동작합니다.
+
+  1. 동시에 켜진 상태에서 기능을 처음 실행 - `Adobe Photoshop`에서 동작.
+  2. `Adobe Photoshop`에서 기능 1회 이상 실행 후, `Adobe Bridge`가 켜고 기능을 실행 - `Adobe Photoshop`에서 동작.
+  3. `Adobe Bridge`에서 기능 1회 이상 실행 후, `Adobe Photoshop`가 켜고 기능을 실행 - `Adobe Bridge`에서 동작.
+
+  - 일반적으로 `Adobe Photoshop`이 우선 순위가 높다고 생각하시면 편할 듯 합니다.
+
+- 또한, 실행 중인 `Camera Raw`가 꺼지면 나머지 `Camera Raw`에서 기능이 실행됩니다.
+
+  ![Photoshop_Bridge_전환](./assets/Photoshop_Bridge_전환.gif)
+
 #### 고려 사항
+
+- 현재 `Adobe Bridge`에서 정상적으로 작동하려면 프로그램 자동 전환 기능을 `off` 한 후 사용하여야 합니다.
+- `Camera Raw`를 또 다른 지원 프로그램으로 묶어서 관리할 지 고민입니다.
 
 ---
 
