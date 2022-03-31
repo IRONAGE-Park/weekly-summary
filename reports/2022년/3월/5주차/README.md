@@ -8,7 +8,8 @@
 - [`Final Cut Pro` 경쟁사 조사 ✅](#final-cut-pro-경쟁사-조사-)
 - [`macOS`에서 `Adobe Camera Raw` 전체 호환 ✅](#macos에서-adobe-camera-raw-전체-호환-)
 - [`Windows` 한/영 버그 수정 조사 ✅](#windows-한영-버그-수정-조사-)
-- [`Windows`에서 `Typing` 기능 `HUX8` 입력 버그 조사 ✅](#windows에서-typing-기능-hux8-입력-버그-조사)
+- [`Windows`에서 `Typing` 기능 `HUX8` 입력 버그 조사 ✅](#windows에서-typing-기능-hux8-입력-버그-조사-)
+- [`Grid Pro` 환경 세팅 ✅](#grid-pro-환경-세팅-)
 
 ---
 
@@ -118,11 +119,35 @@
 
 ---
 
+## `Grid Pro` 환경 세팅 ✅
+
+#### 작업 상세 설명
+
+- `Grid Pro`를 지원하기 위해 `INVAIZ Studio`에서 다시 `Grid Pro` 모델을 추가하고, 데이터를 추가할 수 있도록 버그가 있는 소스를 수정하였습니다.
+
+  ![Grid_Pro_모델_추가](./assets/Grid_Pro_모델_추가.gif)
+
+  ![Grid_Pro_미리보기_호버](./assets/Grid_Pro_미리보기_호버.gif)
+
+- `Tray` 및 메뉴에서 상태를 설정할 수 있는 기능을 `Grid Pro` 모델도 추가하였습니다.
+
+  ![Grid_Pro_메뉴](./assets/Grid_Pro_메뉴.gif)
+
+#### 고려 사항
+
+- `Drag & Drop` 요소를 새로 그려야하는데 기존 `Grid10`과 중복되지 않을 것 같은 소스 코드가 많아 매핑 기능에 시간이 어느정도 쓰일 것으로 예상됩니다.
+
+---
+
 ## 전달 사항
 
 ### 이번 주 추가 리스트
 
+- `Grid Pro` 지원
+
 ### 이번 주 구현 리스트
+
+- `macOS`에서 `Camera Raw` `Bridge`, `ACR` 실행 환경 구분
 
 ### 현재 구현이 필요한 기능
 
@@ -140,4 +165,4 @@
 - `Final Cut Pro` 지원
 - `Tooltip` 스타일 적용
 - 프로그램 추가 후 제거 시 다시 추가할 수 없는 버그
-- `macOS`에서 `Camera Raw` `Bridge`, `ACR` 실행 환경 구분
+- `Grid Pro` 지원
