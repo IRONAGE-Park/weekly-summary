@@ -7,7 +7,7 @@
 - [`Final Cut Pro` 기능, 스크립트, 플러그인 조사 ✅](#final-cut-pro-기능-스크립트-플러그인-조사-)
 - [`Final Cut Pro` 경쟁사 조사 ✅](#final-cut-pro-경쟁사-조사-)
 - [`macOS`에서 `Adobe Camera Raw` 전체 호환 ✅](#macos에서-adobe-camera-raw-전체-호환-)
-- [`Windows` 한/영 버그 수정 조사 ✅](#windows-한영-버그-수정-조사-)
+- [`Windows` 한글 입력 시 종료되는 버그 조사 ✅](#windows-한글-입력-시-종료되는-버그-조사-)
 - [`Windows`에서 `Typing` 기능 `HUX8` 입력 버그 조사 ✅](#windows에서-typing-기능-hux8-입력-버그-조사-)
 - [`Grid Pro` 환경 세팅 ✅](#grid-pro-환경-세팅-)
 
@@ -65,13 +65,15 @@
 
     ![Loupedeck_Functions_Commands_ShortCuts](./assets/Loupedeck_Functions_Commands_ShortCuts.gif)
 
-- `L`사 만의 커스터 마이징 `Commands`를 자동으로 로드해둔 것을 확인하였습니다.
+- `L`사 만의 커스터마이징 `Commands`를 자동으로 로드해둔 것을 확인하였습니다.
 
   ![Loupedeck_Commands](./assets/Loupedeck_Commands.png)
 
 - 또한 다이얼 기능의 경우 수치 조작 패널 종류가 `Color Board`, `Color Curves`, `Color_Wheels`, `Hue/Saturation Curves` 등이 있는 것으로 확인되었는데, 그 중 `Color_Wheels`만 제대로 지원하고 있습니다.
 
 #### 고려 사항
+
+- `L`사의 기능을 따라 구현하는 것은 커스터마이징 `Commands`를 제외하면 오래 걸리지 않을 것 같습니다.
 
 ---
 
@@ -103,11 +105,29 @@
 
 ---
 
-## `Windows` 한/영 버그 수정 조사 ✅
+## `Windows` 한글 입력 시 종료되는 버그 조사 ✅
 
 #### 작업 상세 설명
 
+![단축키_입력_창](./assets/단축키_입력_창.png)
+
+- 단축키를 입력하는 텍스트 필드에서, `Windows`의 경우 현재 키보드 입력 언어 상태가 "한글"일 경우, 짧은 시간 내에 자주 입력하게 되면 `INVAIZ Studio`가 비정상적으로 종료되는 버그가 발생하고 있습니다.
+- 한글 입력의 경우, 영어와는 다르게 조합 글자이므로 컴퓨터가 유의미한 조합이 완성될 때, 한 단어가 끝날 때(포커스가 풀리거나, `Space` 혹은 `ESC` 등)까지 조합 모드를 유지합니다.
+- 이러한 조합 모드를 `JavaScript`에서는 `isComposing` 상태로 알 수 있습니다.
+  - `macOS`는 이 상태를 사용하지 않는 반면에, `Windows`는 이 상태를 사용하고 있습니다.
+- 일반적인 텍스트 필드에서 한글 모드로 정상적으로 단어를 입력하다보면, `isComposing` 상태가 켜졌다가 꺼지는 행위가 반복되면서 동작해야 하는데, 단축키를 입력하는 텍스트 필드는 단어를 입력하면 입력했던 단어가 나열되는 것이 아니라, 키의 위치에 해당하는 알파벳으로 전환하여 입력되기 때문에, 소프트웨어가 인지하는 입력된 단어와 실제 입력된 단어가 달라 `isComposing` 상태를 끄지 못하면서 생기는 버그로 추정되고 있습니다.
+  - 예를 들어, 한글 모드로 `ㅇ`을 입력하더라도, 단축키를 입력하는 텍스트 필드에서는 `ㅇ`이 입력되지 않고 `d`이 입력됩니다.
+  - 소프트웨어는 `ㅇ`이 입력되었을 거라 알고 있기 때문에 `isComposing` 상태를 `true`(조합되어야 하는 상태) 보고 다음 입력을 조합하기 위한 준비를 합니다.
+  - 하지만 실제로 입력된 `d`에는 다음 문자로 모음을 입력하더라도 실제로 한글로의 조합이 되지 않으므로 `isComposing` 상태를 계속해서 `true` 유지하면서 버그가 발생합니다.
+  - 아무래도 `isComposing`을 추적하는 스택같은 것이 있어 그 스택이 초과해버리는 것이 아닐까 추측하고 있습니다.
+  - 실제로 조합이 종료되었을 때 나타나는 이벤트인 `compositionend` 이벤트가 절대로 발생하지 않고 있는 것을 확인하였습니다.
+- 이에 `JavaScript`에서 `isComposing`을 강제로 `false`로 만들어 버리는 방법, `compositionstart`와 `compositionupdate`, `compositionend` 이벤트를 조작하는 방법 등 다양한 방법을 시도해보았으나, 성과는 미미합니다.
+- 이에 가상의 텍스트 필드를 생성하고, 가상 텍스트 필드는 `invisible` 상태로 만든 뒤에 실제 텍스트 필드에 포커싱할 경우, 가상 텍스트 필드로 포커싱되게 하고, 가상 텍스트 필드의 `keydown` 이벤트 값을 통해 실제 텍스트 필드로 반영하는 방법을 구상 중에 있습니다.
+  - 이렇게 하면 가상 텍스트 필드에서는 정상적으로 타이핑이 되므로 `isComposing` 문제가 해결될 수 있을 것으로 보입니다.
+
 #### 고려 사항
+
+- 단축키를 입력하는 텍스트 필드에 포커싱될 때마다 영어로 전환하는 방법도 찾고 있으나, 아직 `Windows`와 `macOS`에서 한/영 키를 조작하거나 상태를 관리하는 소스(`IME-Mode`)를 제대로 찾지 못하였습니다.
 
 ---
 
@@ -125,6 +145,8 @@
 
 - `Grid Pro`를 지원하기 위해 `INVAIZ Studio`에서 다시 `Grid Pro` 모델을 추가하고, 데이터를 추가할 수 있도록 버그가 있는 소스를 수정하였습니다.
 
+  ![Grid_Pro_연결](./assets/Grid_Pro_연결.png)
+
   ![Grid_Pro_모델_추가](./assets/Grid_Pro_모델_추가.gif)
 
   ![Grid_Pro_미리보기_호버](./assets/Grid_Pro_미리보기_호버.gif)
@@ -132,6 +154,12 @@
 - `Tray` 및 메뉴에서 상태를 설정할 수 있는 기능을 `Grid Pro` 모델도 추가하였습니다.
 
   ![Grid_Pro_메뉴](./assets/Grid_Pro_메뉴.gif)
+
+- 또한, `Grid Pro`에서 간단한 기능 매핑을 미리 구현하였습니다.
+
+  ![Grid_Pro_매핑](./assets/Grid_Pro_매핑.gif)
+
+- 향후 추가될 `Grid Pro` 오버레이는, 기존 오버레이와 독립된 창으로 생성할 계획이며, 이에 `Grid Pro`를 동작하더라도 기존 오버레이는 발생하지 않습니다.
 
 #### 고려 사항
 
