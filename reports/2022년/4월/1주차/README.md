@@ -6,7 +6,7 @@
 
 - [`INVAIZ Studio v2` 개발 환경 업데이트 ✅](#invaiz-studio-v2-개발-환경-업데이트-)
 - [`Grid Pro` 사전 작업 ✅](#grid-pro-사전-작업-)
-- [`Final Cut Pro` 동작 코드 작성 ✅](#final-cut-pro-동작-코드-작성-)
+- [`Final Cut Pro` 동작 코드 작성 ❌](#final-cut-pro-동작-코드-작성-)
 - [`INVAIZ Studio` 파일 불러오기, 저장 시 유효성 검사 ✅](#invaiz-studio-파일-불러오기-저장-시-유효성-검사-)
 - [`Windows`에서 `Typing` 기능 `HUX8` 입력 버그 수정 ✅](#windows에서-typing-기능-hux8-입력-버그-수정-)
 - [디테일 수정 ✅](#디테일-수정-)
@@ -51,7 +51,7 @@
 
 ---
 
-## `Final Cut Pro` 동작 코드 작성 ✅
+## `Final Cut Pro` 동작 코드 작성 ❌
 
 #### 작업 상세 설명
 
