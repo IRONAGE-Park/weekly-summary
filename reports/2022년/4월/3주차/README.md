@@ -6,7 +6,8 @@
 
 - [릴리즈 노트 디자인 업데이트 ✅](#릴리즈-노트-디자인-업데이트-)
 - [`Final Cut Pro` 동작 코드 업데이트 ✅](#final-cut-pro-동작-코드-업데이트-)
-- [`INVAIZ Studio` 전체 설정 내보내기/불러오기 ✅](invaiz-studio-전체-설정-내보내기불러오기-)
+- [`Final Cut Pro` 단축키 조사 ✅](#final-cut-pro-단축키-조사-)
+- [`INVAIZ Studio` 전체 설정 내보내기/불러오기 ✅](#invaiz-studio-전체-설정-내보내기불러오기-)
 - [디테일 수정 ✅](#디테일-수정-)
 
 ---
@@ -30,6 +31,34 @@
 #### 작업 상세 설명
 
 #### 고려 사항
+
+---
+
+## `Final Cut Pro` 단축키 조사 ✅
+
+#### 작업 상세 설명
+
+- `Final Cut Pro`가 설치된 `Mac`에서는 `/Users/{USER_NAME}/Library/Preferences`의 `com.apple.FinalCut.plist` 파일로부터 현재 `Final Cut Pro` 애플리케이션 상태와 관련된 값을 읽거나 쓸 수 있음.
+  - 현재 활성화된 `Command Set`
+    ![plist_Active_Command_Set](./assets/plist_Active_Command_Set.png)
+  - `L` 사에서는 `FFDefaultColorCorrectionID`라는 값을 사용하는데, 정확한 용도는 모르나 여기서 데이터를 확인 가능.
+    ![plist_FFDefaultColorCorrectionID](./assets/plist_FFDefaultColorCorrectionID.png)
+- 커스텀 `Command Set` 파일의 형태와 주입(`Final Cut Pro`에 삽입)하는 방법을 발견.
+  - `Command Set` 폴더 위치
+    ![Command_Sets_폴더](./assets/Command_Sets_폴더_위치.png)
+    - 위치: `/Users/{USER_NAME}/Library/Application Support/Final Cut Pro/Command Sets`
+  - `Default Command Set` 구조
+    ![Default_Command_Set](./assets/Default_Command_Set.png)
+  - `INVAIZ Command Set` 구조
+    ![INVAIZ_Command_Set](./assets/INVAIZ_Command_Set.png)
+  - 적용된 커스텀 `Command Set`
+    ![적용된_커스텀_Command_Set](./assets/적용된_커스텀_Command_set.png)
+- 해당 커스텀 `Command Set`과, `Command Set`의 설정 상태를 읽어오는 `plist`를 사용하면 커스텀 단축키를 사용하는 사용자마다 단축키가 다른 문제점을 해결할 수 있고, 현재 `Final Cut Pro` 기능에 해당하는 단축키를 하나하나 매핑 시킬 필요 없이, 현재 `Command Set`에 지정된 해당 기능의 단축키를 읽어와 실행시키는 방법을 사용할 수 있어, `Command Set`으로 설정 가능한 단축키는 모두 지원 가능할 것으로 보임.
+
+#### 고려 사항
+
+- `Command Set` 이상의 단축키가 있는지 확인되지 않았음.
+- 또한, `Plugin` 시스템(`FxPlug`)이 `Adobe`처럼 있는 것 같은데, 모션 플러그인 등의 기능도 추후 고려해볼 만한 것으로 생각됨.
 
 ---
 
