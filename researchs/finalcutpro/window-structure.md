@@ -37,13 +37,13 @@
               name="자르기 그룹"
             >
               <_AXGroup
-                _NICK_NAME="?"
+                _NICK_NAME="What1"
                 class={LKContainerItemView}
                 type="Group"
                 name="그룹"
               />
               <_AXGroup
-                _NICK_NAME="?"
+                _NICK_NAME="What2"
                 class={LKContainerItemView}
                 type="Group"
                 name="그룹"
@@ -780,13 +780,13 @@ const TopContainer = () => {
         name="자르기 그룹"
       >
         <_AXGroup
-          _NICK_NAME="?"
+          _NICK_NAME="What1"
           class={LKContainerItemView}
           type="Group"
           name="그룹"
         />
         <_AXGroup
-          _NICK_NAME="?"
+          _NICK_NAME="What2"
           class={LKContainerItemView}
           type="Group"
           name="그룹"
@@ -912,3 +912,124 @@ const Application = () => {
 ```
 
 ## 별명(`_NICK_NAME`)에 따른 영역 구분
+
+- `MainWindow`
+
+  ![MainWindow](./assets/window-structure/MainWindow.png)
+
+  - `SplitGroup1`
+
+    ![SplitGroup1](./assets/window-structure/SplitGroup1.png)
+
+    - `Group1`
+
+      ![Group1](./assets/window-structure/Group1.png)
+
+      - `MainContainer`
+
+        ![MainContainer](./assets/window-structure/MainContainer.png)
+
+        - `TopWrapper`
+
+          ![TopWrapper](./assets/window-structure/TopWrapper.png)
+
+          - `TopContainer`
+
+            ![TopContainer](./assets/window-structure/TopContainer.png)
+
+            - `What1`
+
+              ![What1](./assets/window-structure/What1.png)
+
+            - `What2`
+
+              ![What2](./assets/window-structure/What2.png)
+
+            - `BrowserWrapper`
+
+              ![BrowserWrapper](./assets/window-structure/BrowserWrapper.png)
+
+            - `Splitter2`
+
+              ![Splitter2](./assets/window-structure/Splitter2.png)
+
+            - `ViewerWrapper`
+
+              ![ViewerWrapper](./assets/window-structure/ViewerWrapper.png)
+
+            - `Splitter3`
+
+              ![Splitter3](./assets/window-structure/Splitter3.png)
+
+            - `InspectorWrapper`
+
+              ![InspectorWrapper](./assets/window-structure/InspectorWrapper.png)
+
+              - `InspectorHeader`
+
+                ![InspectorHeader](./assets/window-structure/InspectorHeader.png)
+
+              - `InspectorArea`
+
+                ![InspectorArea](./assets/window-structure/InspectorArea.png)
+
+                - `InspectorContent`
+
+                  ![InspectorContent](./assets/window-structure/InspectorContent.png)
+
+                  - `InspectorBox`
+
+                    ![InspectorBox](./assets/window-structure/InspectorBox.png)
+
+                    - `InspectorView`
+
+                      ![InspectorView](./assets/window-structure/InspectorView.png)
+
+                      - `InspectorScrollArea`
+
+                        ![InspectorScrollArea](./assets/window-structure/InspectorScrollArea.png)
+
+                        - `ColorBoard`
+
+                          ![ColorBoard](./assets/window-structure/ColorBoard.png)
+
+                        - `ColorWheel`
+
+                          - `ColorWheelItem`
+
+                            ![ColorWheelItem](./assets/window-structure/ColorWheelItem.png)
+
+                          - `ColorWheelPanel`
+                            ![ColorWheelPanel](./assets/window-structure/ColorWheelPanel.png)
+
+                        - `ColorCurve`
+
+                          ![ColorCurve](./assets/window-structure/ColorCurve.png)
+
+                        - `Hue/Saturation Curve`
+
+                          ![HueSaturationCurve](./assets/window-structure/HueSaturationCurve.png)
+
+                  - `InspectorTab`
+
+                    ![InspectorTab](./assets/window-structure/InspectorTab.png)
+
+                  - `InspectorSplitter`
+
+                    ![InspectorSplitter](./assets/window-structure/InspectorSplitter.png)
+
+              - `NoneCheckModeText`
+
+                ![NoneCheckModeText](./assets/window-structure/NoneChecModeText.png)
+
+              - `InspectorFooter`
+
+                ![InspectorFooter](./assets/window-structure/InspectorFooter.png)
+
+        - `Splitter1`
+
+          ![Splitter](./assets/window-structure/Splitter1.png)
+
+        - `BottomWrapper`
+
+          ![BottomWrapper](./assets/window-structure/BottomWrapper.png)
