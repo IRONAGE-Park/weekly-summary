@@ -4,7 +4,7 @@
 
 ---
 
-- [`Final Cut Pro` 배포 ✅](#final-cut-pro-배포-)
+- [`Final Cut Pro` 단축키 작업 ✅](#final-cut-pro-단축키-작업-)
 - [기업 가치 설정 회의 ✅](#기업-가치-설정-회의-)
 - [`macOS`에서 `Adobe Premiere Pro` 추천 프리셋 버그 수정 ✅](#macos에서-adobe-premiere-pro-추천-프리셋-버그-수정-)
 - [`Grid Pro` 오버레이 작업 ✅](#grid-pro-오버레이-작업-)
