@@ -66,7 +66,7 @@
 
 ## 디자인 시스템의 구성
 
-[DesignSystem](./assets/DesignSystem.svg)
+![DesignSystem](./assets/DesignSystem.svg)
 
 - 디자인 시스템을 만들고 유지하기 위해선 디자인 시스템 리포지토리(Design System Repository)와 이를 관리할 인원이 필요하며, 디자인 시스템 리포지토리는 크게 스타일 가이드(Style Guide), 컴포넌트 라이브러리(Component Library), 패턴 라이브러리(Pattern Library)로 이루어져 있다.
 
