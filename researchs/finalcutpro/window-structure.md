@@ -48,37 +48,45 @@
                 type="Group"
                 name="그룹"
               />
-              <_AXGroup
-                _NICK_NAME="BrowserWrapper"
-                class={LKContainerItemView}
-                type="Group"
-                name="그룹"
-              >
-                {8}
-              </_AXGroup>
-              {/* Previous Contents */}
-              <_AXSplitter
-                class={LKSyntheticUIElement}
-                type="Splitter"
-                name="자르기 도구"
-                vector={HORIZONTAL}
-              />
+              {DUAL_MONITOR.BROWSER && (
+                <>
+                  <_AXGroup
+                    _NICK_NAME="BrowserWrapper"
+                    class={LKContainerItemView}
+                    type="Group"
+                    name="그룹"
+                  >
+                    {8}
+                  </_AXGroup>
+                  {/* Previous Contents */}
+                  <_AXSplitter
+                    class={LKSyntheticUIElement}
+                    type="Splitter"
+                    name="자르기 도구"
+                    vector={HORIZONTAL}
+                  />
+                </>
+              )}
               {/* Next Contents */}
-              <_AXGroup
-                _NICK_NAME="ViewerWrapper"
-                class={LKContainerItemView}
-                type="Group"
-                name="그룹"
-              >
-                {3}
-              </_AXGroup>
-              {/* Previous Contents */}
-              <_AXSplitter
-                class={LKSyntheticUIElement}
-                type="Splitter"
-                name="자르기 도구"
-                vector={HORIZONTAL}
-              />
+              {DUAL_MONITOR.VIEWER && (
+                <>
+                  <_AXGroup
+                    _NICK_NAME="ViewerWrapper"
+                    class={LKContainerItemView}
+                    type="Group"
+                    name="그룹"
+                  >
+                    {3}
+                  </_AXGroup>
+                  {/* Previous Contents */}
+                  <_AXSplitter
+                    class={LKSyntheticUIElement}
+                    type="Splitter"
+                    name="자르기 도구"
+                    vector={HORIZONTAL}
+                  />
+                </>
+              )}
               {/* Next Contents */}
               <_AXGroup
                 _NICK_NAME="InspectorWrapper"
@@ -356,21 +364,25 @@
             </_AXSplitGroup>
           </_AXGroup>
           {/* Previous Contents */}
-          <_AXSplitter
-            class={LKSyntheticUIElement}
-            type="Splitter"
-            name="자르기 도구"
-            vector={VECTICAL}
-          />
-          {/* Next Contents */}
-          <_AXGroup
-            _NICK_NAME="BottomWrapper"
-            class={LKContainerItemView}
-            type="Group"
-            name="그룹"
-          >
-            {1}
-          </_AXGroup>
+          {DUAL_MONITOR.TIMELINE && (
+            <>
+              <_AXSplitter
+                class={LKSyntheticUIElement}
+                type="Splitter"
+                name="자르기 도구"
+                vector={VECTICAL}
+              />
+              {/* Next Contents */}
+              <_AXGroup
+                _NICK_NAME="BottomWrapper"
+                class={LKContainerItemView}
+                type="Group"
+                name="그룹"
+              >
+                {1}
+              </_AXGroup>
+            </>
+          )}
         </_AXSplitGroup>
       </_AXGroup>
     </_AXSplitGroup>
@@ -791,23 +803,31 @@ const TopContainer = () => {
           type="Group"
           name="그룹"
         />
-        <BrowserContainer />
-        {/* Previous Contents */}
-        <_AXSplitter
-          class={LKSyntheticUIElement}
-          type="Splitter"
-          name="자르기 도구"
-          vector={HORIZONTAL}
-        />
+        {DUAL_MONITOR.BROWSER && (
+          <>
+            <BrowserContainer />
+            {/* Previous Contents */}
+            <_AXSplitter
+              class={LKSyntheticUIElement}
+              type="Splitter"
+              name="자르기 도구"
+              vector={HORIZONTAL}
+            />
+          </>
+        )}
         {/* Next Contents */}
-        <ViewContainer />
-        {/* Previous Contents */}
-        <_AXSplitter
-          class={LKSyntheticUIElement}
-          type="Splitter"
-          name="자르기 도구"
-          vector={HORIZONTAL}
-        />
+        {DUAL_MONITOR.VIEWER && (
+          <>
+            <ViewContainer />
+            {/* Previous Contents */}
+            <_AXSplitter
+              class={LKSyntheticUIElement}
+              type="Splitter"
+              name="자르기 도구"
+              vector={HORIZONTAL}
+            />
+          </>
+        )}
         {/* Next Contents */}
         <InspectorContainer />
       </_AXSplitGroup>
@@ -844,14 +864,18 @@ const MainContainer = () => {
         >
           <TopContainer />
           {/* Previous Contents */}
-          <_AXSplitter
-            class={LKSyntheticUIElement}
-            type="Splitter"
-            name="자르기 도구"
-            vector={VECTICAL}
-          />
-          {/* Next Contents */}
-          <BottomContainer />
+          {DUAL_MONITOR.TIMELINE && (
+            <>
+              <_AXSplitter
+                class={LKSyntheticUIElement}
+                type="Splitter"
+                name="자르기 도구"
+                vector={VECTICAL}
+              />
+              {/* Next Contents */}
+              <BottomContainer />
+            </>
+          )}
         </_AXSplitGroup>
       </_AXGroup>
     </_AXSplitGroup>
