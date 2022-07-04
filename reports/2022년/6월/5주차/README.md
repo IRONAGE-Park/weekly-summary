@@ -136,28 +136,28 @@
 
 #### 작업 상세 설명
 
-![e-motion_install](./assets/e-motion_install.gif)
+![E-Motion_설치](./assets/E-Motion_설치.gif)
 
 - `E-Motion`을 `macOS`에서도 배포하기 위해 `.pkg` 파일을 생성하였습니다.
 
-  ![e-motion_init](./assets/e-motion_init.png)
+  ![E-Motion_설치_시작](./assets/E-Motion_설치_시작.png)
 
 - 이러한 `.pkg` 파일을 좀 더 수월하게 생성할 수 있도록 스크립트를 구성하였고, 코드 사인 또한 적용하였습니다.
 
-  ![e-motion_codesign](./assets/e-motion-codesign.png)
+  ![E-Motion_코드사인](./assets/E-Motion_코드사인.png)
 
-- 이미 설치된 버전일 경우 한 번 알림을 띄웠습니다.
+- 이미 설치된 버전일 경우 설치되어 있다는 알림을 띄웠습니다.
 
-  ![e-motion_installer](./assets/e-motion_installer.png)
+  ![E-Motion_설치_확인](./assets/E-Motion_설치_확인.png)
 
 - `Adobe Premiere Pro`가 실행된 상태이면 종료하고 설치할 수 있는 창을 띄웠습니다.
 
-  ![e-motion_adobe](./assets/e-motion_adobe.png)
+  ![E-Motion_Adobe_확인](./assets/E-Motion_Adobe_확인.png)
 
 - 라이센스를 명시하였고, 최종 설치 완료 시 참고 사이트 등을 안내하였습니다.
 
-  ![e-motion_license](./assets/e-motion_license.png)
-  ![e-motion_success](./assets/e-motion_success.png)
+  ![E-Motion_라이센스](./assets/E-Motion_라이센스.png)
+  ![E-Motion_설치_완료](./assets/E-Motion_설치_완료.png)
 
 #### 고려 사항
 
@@ -187,6 +187,10 @@
   - `macOS`
 
     ![macOS_라이센스](./assets/macOS_라이센스.png)
+
+- 설치 완료 시 참고할 사이트들을 링크해두었습니다.
+
+  ![INVAIZ_Studio_Basquiat_설치_완료](./assets/INVAIZ_Studio_Basquiat_설치_완료.png)
 
 #### 고려 사항
 
