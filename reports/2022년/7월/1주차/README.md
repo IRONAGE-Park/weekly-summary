@@ -45,7 +45,7 @@
 
   2. 소프트웨어 업데이트 파일 다운로드 시 페이지 `URL` 변경
 
-     ![opern_software_page](./assets/open_software_page.gif)
+     ![oper_software_page](./assets/open_software_page.gif)
 
   3. 매크로에서 단축키의 경우, 툴팁에서 아무 것도 뜨지 않는 상태 변경
 
@@ -71,6 +71,7 @@
 - `Github` 연동은 매일 12시에 커밋 내역이 업로드된다고 하며, 다음과 같은 파일들로 추출됩니다.
   ![goono_commit](./assets/goono_commit.png)
 - 그리고 앞으로의 R&D 진행을 위해 우선 폴더를 만들어 놓았으나, 어떻게 개설하여 어떤식으로 관리할 지에 대한 논의가 필요합니다.
+  ![goono_folder](./assets/goono_folder.png)
 - 추가적으로 `Goono` 및 연구노트 사용법에 대한 메뉴얼을 한 번 정독하였습니다.
 
 #### 고려 사항
