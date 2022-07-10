@@ -1,4 +1,4 @@
-# 개발팀의 `KPI`
+# (인사이트) 개발팀의 `KPI`
 
 ![dev_team](./assets/dev_team.jpg)
 
