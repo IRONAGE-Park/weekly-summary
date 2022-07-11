@@ -10,7 +10,7 @@
 - [에러 처리 레이어 구성 ❌](#에러-처리-레이어-구성-)
 - [스크롤 디테일 수정 ✅](#스크롤-디테일-수정-)
 - [`macOS` 다중 선택 키 수정 ✅](#macos-다중-선택-키-수정-)
-- [`E-Motion` 배포 파일 생성 ✅](#e-motion-배포-파일-생성-)
+- [`EMotion` 배포 파일 생성 ✅](#emotion-배포-파일-생성-)
 - [`macOS` 설치 시 `Adobe Software` 종료 ✅](#macos-설치-시-adobe-software-종료-)
 
 ---
@@ -132,32 +132,32 @@
 
 ---
 
-## `E-Motion` 배포 파일 생성 ✅
+## `EMotion` 배포 파일 생성 ✅
 
 #### 작업 상세 설명
 
-![E-Motion_설치](./assets/E-Motion_설치.gif)
+![EMotion_설치](./assets/EMotion_설치.gif)
 
-- `E-Motion`을 `macOS`에서도 배포하기 위해 `.pkg` 파일을 생성하였습니다.
+- `EMotion`을 `macOS`에서도 배포하기 위해 `.pkg` 파일을 생성하였습니다.
 
-  ![E-Motion_설치_시작](./assets/E-Motion_설치_시작.png)
+  ![EMotion_설치_시작](./assets/EMotion_설치_시작.png)
 
 - 이러한 `.pkg` 파일을 좀 더 수월하게 생성할 수 있도록 스크립트를 구성하였고, 코드 사인 또한 적용하였습니다.
 
-  ![E-Motion_코드사인](./assets/E-Motion_코드사인.png)
+  ![EMotion_코드사인](./assets/EMotion_코드사인.png)
 
 - 이미 설치된 버전일 경우 설치되어 있다는 알림을 띄웠습니다.
 
-  ![E-Motion_설치_확인](./assets/E-Motion_설치_확인.png)
+  ![EMotion_설치_확인](./assets/EMotion_설치_확인.png)
 
 - `Adobe Premiere Pro`가 실행된 상태이면 종료하고 설치할 수 있는 창을 띄웠습니다.
 
-  ![E-Motion_Adobe_확인](./assets/E-Motion_Adobe_확인.png)
+  ![EMotion_Adobe_확인](./assets/EMotion_Adobe_확인.png)
 
 - 라이센스를 명시하였고, 최종 설치 완료 시 참고 사이트 등을 안내하였습니다.
 
-  ![E-Motion_라이센스](./assets/E-Motion_라이센스.png)
-  ![E-Motion_설치_완료](./assets/E-Motion_설치_완료.png)
+  ![EMotion_라이센스](./assets/EMotion_라이센스.png)
+  ![EMotion_설치_완료](./assets/EMotion_설치_완료.png)
 
 #### 고려 사항
 
